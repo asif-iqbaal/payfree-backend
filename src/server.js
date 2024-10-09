@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json()); 
 app.use('/user',router);
 connectDb()
-.then(app.listen(port,()=>{
-    console.log(`server is running at the port ${port} port`);
+.then(app.listen(PORT,()=>{
+    console.log(`server is running at the port ${PORT} port`);
 }))
 

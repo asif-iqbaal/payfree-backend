@@ -4,7 +4,7 @@ import connectDb from './db/index.js';
 import router from './routes/index.js'
 import dotenv from 'dotenv';
 dotenv.config();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 app.use(cors());
 app.use(express.json()); 
